@@ -14,3 +14,13 @@
     box-shadow: 0 0 0 0 rgba(74, 114, 255, 0.05);
   }
 }
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.01;
+  }
+}
