@@ -1,0 +1,83 @@
+@mixin btn {
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: $rounded;
+  text-transform: capitalize;
+  width: max-content;
+  cursor: pointer;
+  @include source-sans-pro;
+}
+
+@mixin btn-sm {
+  padding: 10px 25px;
+}
+
+@mixin btn-lg {
+  padding: 15px 45px;
+}
+
+@mixin source-sans-pro {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+@mixin dm-sans {
+  font-family: "DM Sans", sans-serif;
+}
+
+@mixin btn-primary {
+  @include btn;
+  @include btn-sm;
+  background-color: $primary;
+  color: #f4f7ff;
+  box-shadow: 0px 30px 60px rgba(74, 114, 255, 0.25);
+}
+
+@mixin btn-primary-lg {
+  @include btn;
+  @include btn-lg;
+  background-color: $primary;
+  color: #f4f7ff;
+  box-shadow: 0px 30px 60px rgba(74, 114, 255, 0.25);
+}
+
+@mixin btn-secondary {
+  @include btn;
+  background-color: $primary-light;
+  color: $primary;
+}
+
+@mixin btn-secondary-lg {
+  @include btn;
+  @include btn-lg;
+  background-color: $primary-light;
+  color: $primary;
+}
+
+@mixin heading-1 {
+  @include dm-sans;
+  font-size: 34px;
+  color: $dark;
+  line-height: 44px;
+}
+
+@mixin subtitle {
+  @include dm-sans;
+  font-size: 18px;
+  font-weight: 500;
+  color: $dark;
+}
+
+@mixin text-desc {
+  @include source-sans-pro;
+  font-size: 18px;
+  color: $dark-light;
+  line-height: 28px;
+}
+
+@mixin badge {
+  font-size: 14px;
+  color: $primary;
+  text-transform: uppercase;
+  font-weight: 600;
+}
