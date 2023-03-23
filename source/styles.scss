@@ -45,6 +45,11 @@ nav {
   button {
     @include btn-primary;
     justify-self: end;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 }
 
@@ -1128,6 +1133,108 @@ nav {
           margin-bottom: 0;
         }
       }
+    }
+  }
+}
+
+#faq {
+  padding-block: 100px;
+
+  .title-wrapper {
+    text-align: center;
+    max-width: 48%;
+    margin-inline: auto;
+    margin-bottom: 100px;
+
+    h6 {
+      @include badge;
+      color: $dark;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      @include dm-sans;
+      font-size: 28px;
+      line-height: 42px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: rgba(12, 27, 77, 0.6);
+      line-height: 26px;
+    }
+  }
+
+  .accordion-wrapper {
+    max-width: 673px;
+    margin-inline: auto;
+
+    .accordion {
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      transition: 0.4s;
+      @include dm-sans;
+      color: $dark;
+      font-weight: 500;
+      background-color: transparent;
+      border-bottom: 1px solid rgba(12, 27, 77, 0.1);
+      font-size: 18px;
+      padding: 20px 30px;
+
+      &:hover {
+        background-color: $primary;
+        color: white;
+        border-radius: 6px;
+
+        &::after {
+          color: white;
+        }
+      }
+
+      &::after {
+        content: "\002B";
+        color: $dark;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        transition: 0.4s;
+      }
+
+      .active::after {
+        content: "\2212";
+      }
+    }
+
+    .active {
+      background-color: $primary;
+      color: white;
+      border-top-right-radius: 6px;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      border-bottom: 1px solid #ffffff1a;
+
+      &::after {
+        color: white;
+      }
+    }
+
+    .panel {
+      background-color: $primary;
+      color: white;
+      max-height: 0;
+      padding: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out, padding 0.2s ease-out;
+      margin-bottom: 15px;
+      font-size: 16px;
+      line-height: 26px;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
     }
   }
 }

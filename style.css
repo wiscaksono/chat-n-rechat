@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes pulse-red {
   0% {
     transform: scale(0.9);
@@ -207,6 +208,10 @@ nav button {
   color: #f4f7ff;
   box-shadow: 0px 30px 60px rgba(74, 114, 255, 0.25);
   justify-self: end;
+}
+nav button a {
+  text-decoration: none;
+  color: white;
 }
 
 #hero {
@@ -1167,6 +1172,98 @@ nav button {
 }
 #tech .right-section ul li .text-desc {
   margin-bottom: 0;
+}
+
+#faq {
+  padding-block: 100px;
+}
+#faq .title-wrapper {
+  text-align: center;
+  max-width: 48%;
+  margin-inline: auto;
+  margin-bottom: 100px;
+}
+#faq .title-wrapper h6 {
+  font-size: 14px;
+  color: #4a72ff;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #0c1b4d;
+  margin-bottom: 15px;
+}
+#faq .title-wrapper h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 10px;
+}
+#faq .title-wrapper p {
+  color: rgba(12, 27, 77, 0.6);
+  line-height: 26px;
+}
+#faq .accordion-wrapper {
+  max-width: 673px;
+  margin-inline: auto;
+}
+#faq .accordion-wrapper .accordion {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  font-family: "DM Sans", sans-serif;
+  color: #0c1b4d;
+  font-weight: 500;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(12, 27, 77, 0.1);
+  font-size: 18px;
+  padding: 20px 30px;
+}
+#faq .accordion-wrapper .accordion:hover {
+  background-color: #4a72ff;
+  color: white;
+  border-radius: 6px;
+}
+#faq .accordion-wrapper .accordion:hover::after {
+  color: white;
+}
+#faq .accordion-wrapper .accordion::after {
+  content: "+";
+  color: #0c1b4d;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  transition: 0.4s;
+}
+#faq .accordion-wrapper .accordion .active::after {
+  content: "−";
+}
+#faq .accordion-wrapper .active {
+  background-color: #4a72ff;
+  color: white;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1019607843);
+}
+#faq .accordion-wrapper .active::after {
+  color: white;
+}
+#faq .accordion-wrapper .panel {
+  background-color: #4a72ff;
+  color: white;
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out, padding 0.2s ease-out;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 26px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 #download {

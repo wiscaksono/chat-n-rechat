@@ -26,9 +26,11 @@
         <li><a href="/" class="active">Beranda</a></li>
         <li><a href="#why-rechat">Fitur-fitur</a></li>
         <li><a href="#tech">Teknologi</a></li>
-        <li><a href="#">FAQ</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
-      <button>Download</button>
+      <button>
+        <a href="#download"> Download </a>
+      </button>
     </nav>
     <main>
       <section id="hero">
@@ -607,6 +609,97 @@
           </ul>
         </div>
       </section>
+      <section id="faq">
+        <div class="title-wrapper">
+          <h6>banyak yang nanya</h6>
+          <h1>Pertanyaan Yang Sering Ditanyain</h1>
+          <p>
+            Sebenernya pertanyaan-pertanyaan ini kagak ada yang nanya sih, tapi
+            ya ditaruh sini aja siapa tau lo mau baca ‘kan.
+          </p>
+        </div>
+
+        <div class="accordion-wrapper">
+          <button class="accordion">
+            Apakah aplikasi ini sudah dapat izin dari MUI?
+          </button>
+          <div class="panel">
+            <p>
+              Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya
+              yang bener dong. Bayangin aja kalo aplikasi ini berbayar, masa pas
+              chat lo harus bayar setiap karakter. Kalo lo mau bayar mending
+              pake MMS aja dah.
+            </p>
+          </div>
+          <button class="accordion">Apakah aplikasi ini gratis?</button>
+          <div class="panel">
+            <p>
+              Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya
+              yang bener dong. Bayangin aja kalo aplikasi ini berbayar, masa pas
+              chat lo harus bayar setiap karakter. Kalo lo mau bayar mending
+              pake MMS aja dah.
+            </p>
+          </div>
+
+          <button class="accordion">
+            Apakah data saya akan dijual ke agen khusus US?
+          </button>
+          <div class="panel">
+            <p>
+              Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya
+              yang bener dong. Bayangin aja kalo aplikasi ini berbayar, masa pas
+              chat lo harus bayar setiap karakter. Kalo lo mau bayar mending
+              pake MMS aja dah.
+            </p>
+          </div>
+
+          <button class="accordion">
+            Kenapa bumi muter? Apa karena di depan ada yang nikah?
+          </button>
+          <div class="panel">
+            <p>
+              Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya
+              yang bener dong. Bayangin aja kalo aplikasi ini berbayar, masa pas
+              chat lo harus bayar setiap karakter. Kalo lo mau bayar mending
+              pake MMS aja dah.
+            </p>
+          </div>
+
+          <button class="accordion">
+            Gimana caranya supaya si Rizal mau bikin konten buat Array ID?
+          </button>
+          <div class="panel">
+            <p>
+              Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya
+              yang bener dong. Bayangin aja kalo aplikasi ini berbayar, masa pas
+              chat lo harus bayar setiap karakter. Kalo lo mau bayar mending
+              pake MMS aja dah.
+            </p>
+          </div>
+
+          <button class="accordion">
+            Pertanyaan di atas gabakal ada yang bisa jawab sih
+          </button>
+          <div class="panel">
+            <p>
+              Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya
+              yang bener dong. Bayangin aja kalo aplikasi ini berbayar, masa pas
+              chat lo harus bayar setiap karakter. Kalo lo mau bayar mending
+              pake MMS aja dah.
+            </p>
+          </div>
+
+          <button class="accordion">Kenapa game epep burik, bang?</button>
+          <div class="panel">
+            <p>
+              Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya
+              yang bener dong. Bayangin aja kalo aplikasi ini berbayar, masa pas
+              chat lo harus bayar setiap karakter. Kalo lo mau bayar mending
+              pake MMS aja dah.
+            </p>
+          </div>
+        </div>
+      </section>
       <section id="download">
         <div class="left-section">
           <span class="badge">chat n' rechat</span>
@@ -828,5 +921,24 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      let acc = document.getElementsByClassName("accordion");
+      let i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          let panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            panel.style.padding = 0;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.padding = 20 + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
