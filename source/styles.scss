@@ -31,10 +31,10 @@ nav {
     display: flex;
     align-items: center;
     gap: 65px;
-    color: $dark !important;
 
     a {
       text-decoration: none;
+      color: $dark !important;
     }
 
     .active {
