@@ -20,6 +20,10 @@
     opacity: 0.01;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body,
 div,
@@ -771,7 +775,7 @@ nav button {
   display: flex;
   align-items: center;
   gap: 30px;
-  margin-block: 130px;
+  padding-block: 130px;
 }
 #tech .left-section {
   width: 50%;
@@ -1163,6 +1167,247 @@ nav button {
 }
 #tech .right-section ul li .text-desc {
   margin-bottom: 0;
+}
+
+#download {
+  background-color: #4a72ff;
+  margin-block: 100px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 30px 60px rgba(74, 114, 255, 0.25);
+}
+#download .left-section {
+  padding: 100px 80px;
+  width: 49%;
+}
+#download .left-section h1 {
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 10px;
+  color: white;
+}
+#download .left-section .badge {
+  font-size: 14px;
+  color: #4a72ff;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+#download .left-section ul {
+  list-style: disc;
+  padding-left: 15px;
+  margin-bottom: 40px;
+}
+#download .left-section ul li {
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.6);
+}
+#download .left-section .btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#download .left-section .btn-wrapper button {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+#download .right-section {
+  width: 51%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#download .right-section .phone {
+  width: 331px;
+  height: 538px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+#download .right-section .phone .chat-wrapper {
+  padding-inline: 17px;
+  padding-top: 76px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+#download .right-section .phone .chat-wrapper .white-bubble-chat {
+  max-width: 80%;
+}
+#download .right-section .phone .chat-wrapper .white-bubble-chat .bubble {
+  background: rgba(12, 27, 77, 0.0509803922);
+  padding-top: 20px;
+  padding-bottom: 23px;
+  padding-inline: 18px;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  margin-bottom: 5px;
+}
+#download .right-section .phone .chat-wrapper .white-bubble-chat .bubble .bar {
+  height: 11px;
+  background-color: black;
+  opacity: 5%;
+  border-radius: 3px;
+  margin-bottom: 3.5px;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+#download .right-section .phone .chat-wrapper .white-bubble-chat .bubble .bar:first-child {
+  width: 100%;
+  margin-bottom: 11px;
+}
+#download .right-section .phone .chat-wrapper .white-bubble-chat .bubble .bar:nth-child(2) {
+  width: 90%;
+  margin-bottom: 11px;
+}
+#download .right-section .phone .chat-wrapper .white-bubble-chat .bubble .bar:last-child {
+  width: 65%;
+}
+#download .right-section .phone .chat-wrapper .white-bubble-chat .status {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+}
+#download .right-section .phone .chat-wrapper .white-bubble-chat .status .time {
+  opacity: 60%;
+  font-size: 10px;
+}
+#download .right-section .phone .chat-wrapper .blue-bubble-chat {
+  max-width: 80%;
+  margin-left: auto;
+  width: 100%;
+}
+#download .right-section .phone .chat-wrapper .blue-bubble-chat .bubble {
+  background: #4a72ff;
+  padding-top: 20px;
+  padding-bottom: 23px;
+  padding-inline: 18px;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  margin-bottom: 5px;
+  margin-left: auto;
+}
+#download .right-section .phone .chat-wrapper .blue-bubble-chat .bubble .bar {
+  height: 11px;
+  background-color: black;
+  opacity: 5%;
+  border-radius: 3px;
+  margin-bottom: 3.5px;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+#download .right-section .phone .chat-wrapper .blue-bubble-chat .bubble .bar:first-child {
+  width: 100%;
+  margin-bottom: 11px;
+}
+#download .right-section .phone .chat-wrapper .blue-bubble-chat .bubble .bar:last-child {
+  width: 65%;
+}
+#download .right-section .phone .chat-wrapper .blue-bubble-chat .status {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+}
+#download .right-section .phone .chat-wrapper .blue-bubble-chat .status .time {
+  opacity: 60%;
+  font-size: 10px;
+}
+
+footer {
+  max-width: 1024px;
+  margin-inline: auto;
+}
+footer .wrapper {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 80px;
+  background: rgba(74, 114, 255, 0.0509803922);
+  display: flex;
+  gap: 30px;
+}
+footer .wrapper h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0c1b4d;
+}
+footer .wrapper .chat-n-rechat {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .wrapper .chat-n-rechat .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .wrapper .chat-n-rechat .title img {
+  width: 30px;
+  height: 30px;
+}
+footer .wrapper .chat-n-rechat .text-desc {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  color: rgba(12, 27, 77, 0.6);
+  line-height: 28px;
+}
+footer .wrapper .chat-n-rechat .copyright {
+  font-size: 14px;
+  color: #4a72ff;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(12, 27, 77, 0.6);
+}
+footer .wrapper .sitemap {
+  width: 25%;
+}
+footer .wrapper .sitemap h4 {
+  margin-bottom: 20px;
+}
+footer .wrapper .sitemap ul li {
+  margin-bottom: 10px;
+}
+footer .wrapper .sitemap ul li a {
+  text-decoration: none;
+  color: rgba(12, 27, 77, 0.6);
+  line-height: 26px;
+}
+footer .wrapper .keep-connected {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .wrapper .keep-connected .text-desc {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  color: rgba(12, 27, 77, 0.6);
+  line-height: 28px;
+}
+footer .wrapper .keep-connected .socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .wrapper .keep-connected .socials div {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(12, 27, 77, 0.1);
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
